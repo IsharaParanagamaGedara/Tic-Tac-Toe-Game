@@ -1,0 +1,113 @@
+/* Body styling */
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  color: #333;
+}
+
+/* Header (h1) styling with gradient effect */
+h1 {
+  font-size: 2.5em;
+  background: linear-gradient(45deg, #f8bbd0, #f39c12); /* Gradient colors for h1 */
+  -webkit-background-clip: text;
+  color: transparent; /* Make the text transparent to show the gradient background */
+  display: inline-block; /* Ensure the gradient spans the entire text */
+}
+
+/* Game board styling */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin-top: 2px;
+}
+
+/* Individual cells on the game board */
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f39c12; /* Fun yellow color */
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+/* Hover effect for cells with gradient background and scale effect */
+.cell:hover {
+  background: linear-gradient(45deg, #f8bbd0, #f39c12); /* Gradient colors on hover */
+  transform: scale(1.1); /* Add a slight scale effect on hover */
+  transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+/* Status message styling */
+#status-message {
+  margin-top: 5px;
+  font-size: 1.5em;
+  color: #2ecc71; /* Fun green color */
+}
+
+/* Score section styling */
+.score {
+  margin-top: 10px;
+}
+
+/* Individual scores for players X and O */
+#score-x,
+#score-o {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Button styling with hover effect */
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+/* Hover effect for buttons with background gradient */
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+/* Remove outline on focus for buttons */
+.btn-hover:focus {
+  outline: none;
+}
+
+/* Clear button styling with background gradient and box shadow */
+.btn-hover.clear {
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
