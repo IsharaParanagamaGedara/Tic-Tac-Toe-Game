@@ -12,13 +12,13 @@ A simple web-based Tic Tac Toe game implemented in HTML, CSS, and JavaScript.
 
 ## Overview
 
-This project is a classic Tic Tac Toe game designed for web browsers. It allows two players to take turns placing their "X" or "O" on a 3x3 grid, with the goal of getting three in a row horizontally, vertically, or diagonally.
+This project is a classic Tic Tac Toe game designed for web browsers. It allows two players to take turns placing their "X" or "O" on a 3x3 grid, to get three in a row horizontally, vertically, or diagonally.
 
 ## Features
 
 - Simple and intuitive user interface.
 - Player score tracking for multiple rounds.
-- Clear board and continue playing functionality.
+- Clear the board and continue playing functionality.
 - Responsive design for various screen sizes.
 
 ## Getting Started
@@ -33,6 +33,7 @@ git clone https://github.com/IsharaParanagamaGedara/Tic-Tac-Toe-Game.git
 cd Tic-Tac-Toe-Game
 
 # Open index.html in your preferred web browser
+```
 
 ## Game Rules
 
